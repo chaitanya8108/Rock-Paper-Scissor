@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +16,10 @@ h1{
     justify-content: center;
     align-items: center; */
     line-height: 5rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -22,6 +30,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
 }
 
 img{
@@ -38,11 +47,11 @@ img{
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 1rem;
-    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .choice:hover{
-    background-color: black;
+    background-color: rgb(240, 235, 235);
     cursor: pointer;
 }
 
@@ -66,27 +75,43 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 #msg {
-    background-color: darkseagreen;
+    background: linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
     font-size: 1rem;
     display: inline;
     border-radius: 5px;
     padding: 1rem;
+    /* border: 1px solid ; */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
 #reset {
-    color: #fff;
-    font-style: italic;
+    color: black;
+    /* font-style: italic; */
     line-height: 7rem;
-    background-color: navy;
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
     font-size: 2rem;
     display: inline;
     border-radius: 5px;
-    padding: 0.5rem
+    padding: 0.5rem;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 #reset:hover {
     cursor: pointer;
+}
+
+.abc {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;   
 }

@@ -19,12 +19,13 @@ const resetGame = () => {
 
 id.addEventListener("click", () => {
     resetGame(userScore, compScore);
+    msg.style.background = "linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%)";
 })
 
 const drawGame = (userChoice, compChoice) => {
 //   console.log("game was draw");
-  msg.innerText = `Draw between Your : "${userChoice}" and Computer : "${compChoice}"`;
-  msg.style.backgroundColor = "grey";
+  msg.innerHTML = `<b>Draw between Your : "${userChoice}" and Computer : "${compChoice}"</b>`;
+  msg.style.background = "linear-gradient(90deg, hsla(180, 13%, 58%, 1) 0%, hsla(335, 16%, 61%, 1) 100%)";
 };
 
 const genCompChoice = () => {
@@ -38,15 +39,15 @@ const winDeclare = (userWin, userChoice, compChoice) => {
   if (userWin == true) {
     userScore++;
     user_score.innerText = userScore;
-    msg.innerText = `Your : "${userChoice}" beats Computer : "${compChoice}"`;
-    msg.style.backgroundColor = "green"; 
+    msg.innerHTML = `<b>Your : "${userChoice}" beats Computer : "${compChoice}"</b>`;
+    msg.style.background = "linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%)"; 
     // console.log("your score = ", userScore);
     // console.log("you Won");
   } else {
     compScore++;
     comp_score.innerText = compScore;
-    msg.innerText = `Computer : "${compChoice}" beats Your : "${userChoice}"`;
-    msg.style.backgroundColor = "red";
+    msg.innerHTML = `<b>Computer : "${compChoice}" beats Your : "${userChoice}"</b>`;
+    msg.style.background = "linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%)";
     // console.log("comp score = ", compScore);
     // console.log("you lose");
   }
